@@ -24,10 +24,9 @@ li {
   background-color: brown;
   position: fixed;
   width: 100%;
-  font-color: white;
 }
 
 .welcome {
-  position: relative;
+  position: absolute;
   z-index: 11;
 }
