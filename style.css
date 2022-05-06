@@ -16,6 +16,10 @@ h2 {
   font-size: 32px;
 }
 
+li {
+  color: white;
+}
+
 .navbar {
   background-color: brown;
   position: fixed;
