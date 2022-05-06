@@ -1,7 +1,7 @@
-@import url('//fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url(//fonts.googleapis.com/css?family=Hind:300,500);
 
 p {
-  font-family: Roboto;
+  font-family: Hind;
 }
 
 .welcome {
