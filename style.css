@@ -8,6 +8,11 @@ h1 {
 h2 {
   font-family: 'Raleway', sans-serif;
 }
+
 ul li {
   font-family: 'Raleway', sans-serif;
+}
+
+.navbar {
+  background-color: brown;
 }
