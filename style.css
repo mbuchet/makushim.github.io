@@ -1,7 +1,7 @@
 @import url(//fonts.googleapis.com/css?family=Hind:300,500);
 
 p {
-  font-family: Helvetica;
+  font-family: Helvetica, sans-serif;
 }
 
 .welcome {
