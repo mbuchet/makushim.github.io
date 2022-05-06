@@ -15,4 +15,5 @@ ul li {
 
 .navbar {
   background-color: brown;
+  position: fixed;
 }
