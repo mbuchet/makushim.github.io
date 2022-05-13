@@ -136,7 +136,6 @@ a:visited {
 
 a:link {
     text-decoration: none;
-    color: white;
 }
 
 #links:hover {
@@ -147,7 +146,7 @@ a:link {
     background-color: steelblue;
     font-family: 'Raleway', 'Trebuchet MS', sans-serif;
     text-align: center;
-    padding-bottom: 20px;
+    padding: 20px;
 }
 
 .footer ul {
@@ -160,16 +159,7 @@ a:link {
     text-align: left;
 }
 
-.wrapper {
-    min-height: 100%;
-
-    /* Equal to height of footer */
-    /* But also accounting for potential margin-bottom of last child */
-    margin-bottom: -120px;
-}
-
-.footer,
-.push {
+.footer {
     height: 80px;
 }
 
