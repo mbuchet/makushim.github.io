@@ -148,7 +148,7 @@ a:link {
     color: tomato;
 }
 
-#links {
+#links .bloctext {
     background-color: tomato;
     color: white;
     font-family: 'Raleway', 'Trebuchet MS', sans-serif;
