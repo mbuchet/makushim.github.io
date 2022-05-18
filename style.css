@@ -5,7 +5,6 @@
 h1 {
     font-family: 'Raleway', 'Trebuchet MS', sans-serif;
     font-weight: 900;
-    font-variant: small-caps;
 }
 
 ul {
@@ -17,6 +16,7 @@ h2 {
     font-weight: 400;
     padding: 10px;
     font-weight: bold;
+    font-variant: small-caps;
 }
 
 h3 {
