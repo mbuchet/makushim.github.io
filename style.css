@@ -8,7 +8,7 @@ h1 {
 }
 
 ul {
-    margin-top: 0px;
+    margin: 0px;
 }
 
 h2 {
@@ -57,9 +57,9 @@ p {
     margin-top: 0px;
 }
 
-body {
+/* body {
     display: inline;
-}
+} */
 
 .blocktext ul li {
     font-family: 'Raleway', 'Trebuchet MS', sans-serif;
@@ -70,40 +70,41 @@ body {
 nav ul li {
     font-family: 'Raleway', 'Trebuchet MS', sans-serif;
     display: inline-block;
-    padding: 20px;
     font-size: 32px;
     font-weight: 900;
-    margin: 0px;
-}
-
-li {
     list-style: none;
+    padding: 10px;
+    margin: 10px;
 }
 
 nav {
-    background-color: steelblue;
+    background-color: white;
     width: 100%;
+    text-align: center;
+    position: fixed;
+    transition: all 0.3s ease-out;
+    display: flex;
+    justify-content: space-around;
 }
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
+.anim-links {
+    background-color: floralwhite;
+    border-bottom: 1px solid floralwhite;
+    padding-top: 5px;
+}
+
+.anim-links a:visited {
+    color: tomato;
+}
+
+.anim-links a:hover {
+    text-decoration: underline tomato;
+    padding: 5px;
 }
 
 .welcome {
-    position: relative;
     height: 100%;
-    padding-top: 250px;
-    border-bottom: 4px solid black;
+    padding-top: 300px;
 }
 
 .welcome h1 {
@@ -116,19 +117,11 @@ section {
     text-align: center;
 }
 
-a:hover {
-    text-decoration: none;
-}
-
 a:visited {
-    color: white;
+    color: tomato;
 }
 
-.contactme a:visited {
-    color: black;
-}
-
-.contactme a {
+#contactmelinks {
     color: black;
 }
 
@@ -136,27 +129,30 @@ a:link {
     text-decoration: none;
 }
 
-#links:hover {
-    color: tomato;
+nav a:hover {
+    text-decoration: underline tomato;
 }
 
+nav a {
+    color: tomato;
+    padding: 5px;
+}
 
 #linktop {
     background-color: tomato;
     color: white;
     font-family: 'Raleway', 'Trebuchet MS', sans-serif;
     font-weight: 900;
-    border-radius: 10px;
+    border-radius: 5px;
     height: 25px;
     display: block;
     width: 50px;
     text-align: center;
-    position: relative;
     float: right;
 }
 
 .footer {
-    background-color: steelblue;
+    background-color: floralwhite;
     font-family: 'Raleway', 'Trebuchet MS', sans-serif;
     text-align: center;
     padding: 20px;
@@ -166,16 +162,18 @@ a:link {
 .footer ul {
     display: inline-block;
     text-align: left;
+    padding: 20px;
 }
 
-.footer li {
+footer li {
     display: inline-block;
     text-align: left;
-    color: white;
+    color: tomato;
 }
 
 .footer {
-    height: 80px;
+    height: auto;
+    width: 100%;
 }
 
 html,
