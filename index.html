@@ -12,9 +12,9 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#aboutme" id="links">About me</a></li>
-                <li><a href="#myworks" id="links">My works</a></li>
-                <li><a href="#contactme" id="links">Contact me</a></li>
+                <li><a href="#aboutme">About me</a></li>
+                <li><a href="#myworks">My works</a></li>
+                <li><a href="#contactme">Contact me</a></li>
             </ul>
         </nav>
     </header>
@@ -46,7 +46,8 @@
             <h2>My Works</h2>
             <h3>Site de gestion de produits de sécurité datacenter - Orange</h3>
             <p>Utilisation du framework django afin de créer un site web permettant de commander ou
-                contrôler des équipements de sécurité. Récupération de données d'une source de vérité réseaux via Api
+                contrôler des équipements de sécurité. Récupération de données d'une source de vérité réseaux via
+                Api
                 Rest. Déclenchement de pipeline gitlab de configuration d'équipements via webhooks.</p>
             <h4><u>Technos / outils / frameworks</u></h4>
             <ul>
@@ -56,7 +57,8 @@
                 <li>gitlab-ci</li>
             </ul>
             <h3>Site de mise en relation joueurs - Tribiou.com</h3>
-            <p>Développeur full stack sur un projet de site web mettant en relation des joueurs de jeux de société et
+            <p>Développeur full stack sur un projet de site web mettant en relation des joueurs de jeux de société
+                et
                 wargame. Aider les joueurs à trouver
                 un joueur pour une partie occasionnelle, un tournoi ou une association de jeux dans sa région.</p>
             <h4><u>Technos / outils / frameworks</u></h4>
@@ -71,16 +73,17 @@
         </div>
     </div>
 
-    <div id="contactme" class="contactme">
+    <div id="contactme">
         <div class="blocktext">
             <h2>Contact me</h2>
             <p>
                 <strong>Contact</strong><br />
                 Maxime BUCHET<br />
-                e-mail - <a href="mailto:makushim@gmail.com">makushim31@gmail.com</a><br /><br />
+                e-mail - <a id="contactmelinks" href="mailto:makushim@gmail.com">makushim31@gmail.com</a><br /><br />
                 <strong>Social</strong><br />
-                Linkedin - <a href="https://www.linkedin.com/in/maximebuchet/">maximebuchet</a><br />
-                GitHub - <a href="https://github.com/mbuchet">mbuchet</a><br />
+                Linkedin - <a id="contactmelinks"
+                    href="https://www.linkedin.com/in/maximebuchet/">maximebuchet</a><br />
+                GitHub - <a id="contactmelinks" href="https://github.com/mbuchet">mbuchet</a><br />
             </p>
             <p>
                 <a href="#" id="linktop">Top</a>
@@ -91,15 +94,26 @@
 </body>
 <footer class="footer">
     <ul>
-        <li><strong>Contact</strong></li><br />
+        <li><strong style="color: black">Contact</strong></li><br />
         <li>Maxime BUCHET</li><br />
-        <li>e-mail - makushim@gmail.com</li><br />
+        <li><span style="color: black">e-mail</span> - makushim@gmail.com</li><br />
     </ul>
     <ul>
-        <li><strong>Social</strong></li><br />
-        <li>Linkedin - <a href="https://www.linkedin.com/in/maximebuchet/">maximebuchet</a></li><br />
-        <li>GitHub - <a href="https://github.com/mbuchet">mbuchet</a></li><br />
+        <li><strong style="color: black">Social</strong></li><br />
+        <li><span style="color: black">Linkedin</span> - <a
+                href="https://www.linkedin.com/in/maximebuchet/">maximebuchet</a></li><br />
+        <li><span style="color: black">GitHub</span> - <a href="https://github.com/mbuchet">mbuchet</a></li><br />
     </ul>
 </footer>
+<script>
+    const navigation = document.querySelector('nav');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 30) {
+            navigation.classList.add('anim-links');
+        } else {
+            navigation.classList.remove('anim-links');
+        }
+    });
+</script>
 
 </html>
