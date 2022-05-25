@@ -88,7 +88,7 @@ nav {
 }
 
 .anim-links {
-    background-color: floralwhite;
+    background-color: rgb(39, 55, 71);
     border-bottom: 1px solid floralwhite;
     padding-top: 5px;
 }
@@ -104,7 +104,7 @@ nav {
 
 .welcome {
     height: 100%;
-    padding-top: 300px;
+    padding-top: 350px;
 }
 
 .welcome h1 {
@@ -152,7 +152,7 @@ nav a {
 }
 
 .footer {
-    background-color: floralwhite;
+    background-color: rgb(39, 55, 71);
     font-family: 'Raleway', 'Trebuchet MS', sans-serif;
     text-align: center;
     padding: 20px;
@@ -169,6 +169,10 @@ footer li {
     display: inline-block;
     text-align: left;
     color: tomato;
+}
+
+footer strong {
+    color: floralwhite;
 }
 
 .footer {
