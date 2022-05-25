@@ -107,29 +107,6 @@
 </footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
-<script>
-    const navigation = document.querySelector('nav');
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 30) {
-            navigation.classList.add('anim-links');
-        } else {
-            navigation.classList.remove('anim-links');
-        }
-    });
-
-    const menu = document.querySelectorAll("nav li");
-    const welcome = document.querySelectorAll(".welcome")
-
-    window.addEventListener('load', () => {
-        const timeline = gsap.timeline({ paused: true });
-        timeline
-            .staggerFrom(menu, 2, { top: -50, opacity: 0, ease: "power2.out" }, 0.3)
-            .staggerFrom(welcome, 1, { opacity: 0, ease: "power2.out" }, 0.3, '-=1.5')
-
-        timeline.play();
-    })
-
-
-</script>
+<script src="index.js"></script>
 
 </html>
