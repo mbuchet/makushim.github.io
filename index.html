@@ -19,8 +19,8 @@
         </nav>
     </header>
     <div class="welcome">
-        <h2 class="blocktext">I'm Maxime BUCHET</h2>
-        <h1>Full stack developer</h2>
+        <h2 class="blocktext"><span>I'm Maxime BUCHET</span></h2>
+        <h1><span>Full stack developer</span></h1>
     </div>
     <hr>
     <div id="aboutme" class="aboutme">
@@ -105,6 +105,8 @@
         <li><span style="color: black">GitHub</span> - <a href="https://github.com/mbuchet">mbuchet</a></li><br />
     </ul>
 </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
 <script>
     const navigation = document.querySelector('nav');
     window.addEventListener('scroll', () => {
@@ -114,6 +116,20 @@
             navigation.classList.remove('anim-links');
         }
     });
+
+    const menu = document.querySelectorAll("nav li");
+    const welcome = document.querySelectorAll(".welcome")
+
+    window.addEventListener('load', () => {
+        const TL = gsap.timeline({ paused: true });
+        TL
+            .staggerFrom(menu, 2, { top: -50, opacity: 0, ease: "power2.out" }, 0.3)
+            .staggerFrom(welcome, 1, { opacity: 0, ease: "power2.out" }, 0.3, '-=1.5')
+
+        TL.play();
+    })
+
+
 </script>
 
 </html>
