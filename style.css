@@ -185,7 +185,3 @@ body {
     height: 100%;
     margin: 0;
 }
-
-div:hover {
-    background-color: blue;
-}
