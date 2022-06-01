@@ -1,187 +1,111 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+<!doctype html>
+<html>
 
-h1 {
-    font-family: 'Raleway', 'Trebuchet MS', sans-serif;
-    font-weight: 900;
-}
+<head>
+    <title>Maxime BUCHET - Portfolio</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="Author" content="BUCHET Maxime">
+    <link rel='stylesheet' href='style.css'>
+</head>
 
-ul {
-    margin: 0px;
-}
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#aboutme">About me</a></li>
+                <li><a href="#myworks">My works</a></li>
+                <li><a href="#contactme">Contact me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="welcome">
+        <h2 class="blocktext"><span>I'm Maxime BUCHET</span></h2>
+        <h1><span>Full stack developer</span></h1>
+    </div>
+    <hr>
+    <div id="aboutme" class="aboutme">
+        <div class="blocktext">
+            <h2>About me</h2>
+            <p>
+                Ingénieur réseau et sécurité de formation ayant 10 ans d'expérience dans l'architecture infrastructure
+                datacenter, j'ai décidé de me reconvertir dans le développement web.
+                J'ai commencé le développement par de l'automatisation de la configuration d'équipements réseaux via des
+                scripts Python et de l'Ansible.
+                Lors d'un de mes récents projets de construction de datacenter mêlant l'infrastructure et code, j'ai
+                redécouvert le plaisir de monter un site web permettant de simplifier l'interaction de
+                l'utilisateur avec son infrastructure.
+            </p>
+            <p>
+                <a href="#" id="linktop">Top</a>
+            </p>
+        </div>
+    </div>
 
-h2 {
-    font-family: 'Raleway', 'Trebuchet MS', sans-serif;
-    font-weight: 400;
-    padding: 10px;
-    font-weight: bold;
-    font-variant: small-caps;
-}
+    <div id="myworks" class="myworks">
+        <div class="blocktext">
+            <h2>My Works</h2>
+            <h3>Site de gestion de produits de sécurité datacenter - Orange</h3>
+            <p>Utilisation du framework django afin de créer un site web permettant de commander ou
+                contrôler des équipements de sécurité. Récupération de données d'une source de vérité réseaux via
+                Api
+                Rest. Déclenchement de pipeline gitlab de configuration d'équipements via webhooks.</p>
+            <h4><u>Technos / outils / frameworks</u></h4>
+            <ul>
+                <li>django</li>
+                <li>html</li>
+                <li>bootstrap css</li>
+                <li>gitlab-ci</li>
+            </ul>
+            <h3>Site de mise en relation joueurs - Tribiou.com</h3>
+            <p>Développeur full stack sur un projet de site web mettant en relation des joueurs de jeux de société
+                et
+                wargame. Aider les joueurs à trouver
+                un joueur pour une partie occasionnelle, un tournoi ou une association de jeux dans sa région.</p>
+            <h4><u>Technos / outils / frameworks</u></h4>
+            <ul>
+                <li>node.js</li>
+                <li>html</li>
+                <li>css</li>
+            </ul>
+            <p>
+                <a href="#" id="linktop">Top</a>
+            </p>
+        </div>
+    </div>
 
-h3 {
-    font-family: 'Raleway', 'Trebuchet MS', sans-serif;
-    font-weight: 400;
-    padding: 10px;
-}
+    <div id="contactme">
+        <div class="blocktext">
+            <h2>Contact me</h2>
+            <p>
+                <strong>Contact</strong><br />
+                Maxime BUCHET<br />
+                e-mail - <a id="contactmelinks" href="mailto:makushim@gmail.com">makushim31@gmail.com</a><br /><br />
+                <strong>Social</strong><br />
+                Linkedin - <a id="contactmelinks"
+                    href="https://www.linkedin.com/in/maximebuchet/">maximebuchet</a><br />
+                GitHub - <a id="contactmelinks" href="https://github.com/mbuchet">mbuchet</a><br />
+            </p>
+            <p>
+                <a href="#" id="linktop">Top</a>
+            </p>
+            <br />
+        </div>
+    </div>
+</body>
+<footer class="footer">
+    <ul>
+        <li><strong>Contact</strong></li><br />
+        <li>Maxime BUCHET</li><br />
+        <li>e-mail - makushim@gmail.com</li><br />
+    </ul>
+    <ul>
+        <li><strong>Social</strong></li><br />
+        <li>Linkedin - <a href="https://www.linkedin.com/in/maximebuchet/">maximebuchet</a></li><br />
+        <li>GitHub - <a href="https://github.com/mbuchet">mbuchet</a></li><br />
+    </ul>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+<script src="index.js"></script>
 
-h4 {
-    font-family: 'Raleway', 'Trebuchet MS', sans-serif;
-    font-weight: 200;
-    padding: 10px;
-    font-size: medium;
-    color: tomato;
-    font-weight: 400;
-    margin-bottom: 0px;
-    margin-top: 0px;
-}
-
-p {
-    font-family: 'Raleway', 'Trebuchet MS', sans-serif;
-    font-weight: 200;
-    padding: 10px;
-    max-width: 800px;
-    min-width: 50px;
-    text-align: justify;
-    line-height: 1.4;
-}
-
-.blocktext {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 800px;
-    min-width: 400px;
-}
-
-.blocktext p {
-    margin-top: 0px;
-}
-
-/* body {
-    display: inline;
-} */
-
-.blocktext ul li {
-    font-family: 'Raleway', 'Trebuchet MS', sans-serif;
-    color: black;
-    list-style: square;
-}
-
-nav ul li {
-    font-family: 'Raleway', 'Trebuchet MS', sans-serif;
-    display: inline-block;
-    font-size: 32px;
-    font-weight: 900;
-    list-style: none;
-    padding: 10px;
-    margin: 10px;
-}
-
-nav {
-    background-color: white;
-    width: 100%;
-    text-align: center;
-    position: fixed;
-    transition: all 0.3s ease-out;
-    display: flex;
-    justify-content: space-around;
-}
-
-.anim-links {
-    background-color: rgb(39, 55, 71);
-    border-bottom: 1px solid floralwhite;
-    padding-top: 5px;
-}
-
-.anim-links a:visited {
-    color: tomato;
-}
-
-.anim-links a:hover {
-    text-decoration: underline tomato;
-    padding: 5px;
-}
-
-.welcome {
-    height: 100%;
-    padding-top: 350px;
-}
-
-.welcome h1 {
-    font-size: 100px;
-    text-align: center;
-}
-
-.welcome h2 {
-    font-size: 30px;
-    text-align: center;
-}
-
-a:visited {
-    color: tomato;
-}
-
-#contactmelinks {
-    color: black;
-}
-
-a:link {
-    text-decoration: none;
-}
-
-nav a:hover {
-    text-decoration: underline tomato;
-}
-
-nav a {
-    color: tomato;
-    padding: 5px;
-}
-
-#linktop {
-    background-color: tomato;
-    color: white;
-    font-family: 'Raleway', 'Trebuchet MS', sans-serif;
-    font-weight: 900;
-    border-radius: 5px;
-    height: 25px;
-    display: block;
-    width: 50px;
-    text-align: center;
-    float: right;
-}
-
-.footer {
-    background-color: rgb(39, 55, 71);
-    font-family: 'Raleway', 'Trebuchet MS', sans-serif;
-    text-align: center;
-    padding: 20px;
-    margin-top: 20px;
-}
-
-.footer ul {
-    display: inline-block;
-    text-align: left;
-    padding: 20px;
-}
-
-footer li {
-    display: inline-block;
-    text-align: left;
-    color: tomato;
-}
-
-footer strong {
-    color: floralwhite;
-}
-
-.footer {
-    height: auto;
-    width: 100%;
-}
-
-html,
-body {
-    height: 100%;
-    margin: 0;
-}
+</html>
